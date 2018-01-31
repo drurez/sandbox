@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns:
 		[full-start] 1fr
-		[main-start] repeat(12, [col] minmax(auto, 60px))[main-end]
+		[main-start] repeat(12, [col] minmax(auto, 80px))[main-end]
 		1fr [full-end];
 	grid-column-gap: 20px;
 	word-break: break-all;
@@ -33,7 +33,7 @@ body {
 
 .site-nav {
 	background: $peach;
-	grid-column: col 3 / col 12;
+	grid-column: col 3 / main-end;
 	&__list {
 		display: flex;
 		height: 100%;
@@ -65,7 +65,7 @@ body {
 
 .main-content {
 	border: 1px solid $red;
-	grid-column: col 3 / span 9;
+	grid-column: col 3 / main-end;
 
 }
 
