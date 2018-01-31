@@ -5,7 +5,7 @@
 		[main-start] repeat(12, [col] minmax(auto, 60px))[main-end]
 		1fr [full-end];
 	grid-column-gap: 20px;
-	word-break: break-word;
+	word-break: break-all;
 }
 
 body {
