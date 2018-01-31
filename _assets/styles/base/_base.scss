@@ -1,0 +1,9 @@
+// border-box
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+
+body {
+	font-size: 14px;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 1.7;
+	font-weight: 300;
+}
