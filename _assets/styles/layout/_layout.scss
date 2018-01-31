@@ -1,19 +1,77 @@
-.site-header {
-	background: $blue;
+@mixin grid {
+	display: grid;
+	grid-template-columns:
+		[full-start] 1fr
+		[main-start] repeat(12, [col] minmax(auto, 60px))[main-end]
+		1fr [full-end];
+	grid-column-gap: 20px;
+	word-break: break-word;
 }
 
+body {
+	@include grid;
+	grid-template-rows: 70px 1fr 100px;
+	min-height: 100vh;
+	& > * {
+		grid-column: full-start / full-end;
+	}
+
+}
+
+// HEADER AND NAV
+
+.site-header {
+	@include grid;
+	background: $blue;
+	grid-row: 1;
+	.logo {
+		align-items: center;
+		display: grid;
+		grid-column: col 1 / col 3;
+	}
+}
+
+.site-nav {
+	background: $peach;
+	grid-column: col 3 / col 12;
+	&__list {
+		display: flex;
+		height: 100%;
+		flex-direction: row; /* row || column || row-reverse || column-reverse */
+		flex-wrap: wrap; /* wrap || nowrap || wrap-reverse */
+		flex-flow: row wrap; /*shorthand for flex-direction and flex-wrap*/
+		justify-content: flex-end; /* [MAIN AXIS] flex-start || flex-end || center || space-between || space-around */
+		align-items: center; /* [CROSS AXIS] flex-start || flex-end || center || stretch || baseline */
+	}
+	&__list-item {
+		margin-left: 1.5rem;
+		a {text-decoration: none;}
+	}
+}
+
+// SITE MAIN
+
 .site-main {
-	border: 1px solid $red;
+	@include grid;
+	background: $gold;
+	grid-row: 2
 }
 
 .sidebar {
-	background: $teal;
+	border: 1px solid $red;
+	grid-column: col 1 / col 3;
+
 }
 
 .main-content {
-	background: #fff;
+	border: 1px solid $red;
+	grid-column: col 3 / span 9;
+
 }
 
+// FOOTER
+
 .site-footer {
-	background: $gold;
+	background: $teal;
+	grid-row: 3;
 }
