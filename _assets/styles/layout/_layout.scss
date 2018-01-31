@@ -22,7 +22,7 @@ body {
 
 .site-header {
 	@include grid;
-	background: $blue;
+	border-bottom: 1px solid $red;
 	grid-row: 1;
 	.logo {
 		align-items: center;
@@ -32,7 +32,6 @@ body {
 }
 
 .site-nav {
-	background: $peach;
 	grid-column: col 3 / main-end;
 	&__list {
 		display: flex;
@@ -58,13 +57,12 @@ body {
 }
 
 .sidebar {
-	border: 1px solid $red;
+	border-right: 1px solid $red;
 	grid-column: col 1 / col 3;
 
 }
 
 .main-content {
-	border: 1px solid $red;
 	grid-column: col 3 / main-end;
 	display: grid;
 	grid-template-columns: [main-start] repeat(10, [col] minmax(auto, 80px))[main-end];
