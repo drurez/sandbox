@@ -1,9 +1,9 @@
 @mixin grid {
 	display: grid;
 	grid-template-columns:
-		[full-start] 1fr
+		[full-start] minmax(20px, 1fr)
 		[main-start] repeat(12, [col] minmax(auto, 80px))[main-end]
-		1fr [full-end];
+		minmax(20px, 1fr) [full-end];
 	grid-column-gap: 20px;
 	word-break: break-all;
 }
@@ -26,7 +26,7 @@ body {
 	grid-row: 1;
 	.logo {
 		align-items: center;
-		display: grid;
+		display: flex;
 		grid-column: col 1 / col 3;
 	}
 }
@@ -57,25 +57,24 @@ body {
 }
 
 .sidebar {
-	border-right: 1px solid $red;
-	grid-column: col 1 / col 3;
+	grid-column: col 1 / col 4;
+	padding-right: 1rem;
 
 }
 
 .main-content {
-	grid-column: col 3 / main-end;
+	grid-column: col 4 / main-end;
 	display: grid;
-	grid-template-columns: [main-start] repeat(10, [col] minmax(auto, 80px))[main-end];
+	grid-template-columns: [main-start] repeat(9, [col] minmax(auto, 80px))[main-end];
 	grid-template-rows: 100px 1fr;
 	grid-column-gap: 20px;
+	padding-left: 1rem;
 	h1 {
-		display: flex;
-		align-items: center;
-		grid-column: col 2 / main-end;
+		grid-column: col 1 / main-end;
 		grid-row: 1;
 	}
 	&__item {
-		grid-column: col 2 / col 9;
+		grid-column: col 1 / col 9;
 		grid-row: 2;
 	}
 
