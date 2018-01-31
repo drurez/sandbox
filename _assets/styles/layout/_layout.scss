@@ -68,10 +68,17 @@ body {
 	grid-column: col 3 / main-end;
 	display: grid;
 	grid-template-columns: [main-start] repeat(10, [col] minmax(auto, 80px))[main-end];
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 100px 1fr;
 	grid-column-gap: 20px;
+	h1 {
+		display: flex;
+		align-items: center;
+		grid-column: col 2 / main-end;
+		grid-row: 1;
+	}
 	&__item {
 		grid-column: col 2 / col 9;
+		grid-row: 2;
 	}
 
 }
