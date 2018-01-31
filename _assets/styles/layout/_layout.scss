@@ -66,6 +66,13 @@ body {
 .main-content {
 	border: 1px solid $red;
 	grid-column: col 3 / main-end;
+	display: grid;
+	grid-template-columns: [main-start] repeat(10, [col] minmax(auto, 80px))[main-end];
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 20px;
+	&__item {
+		grid-column: col 2 / col 9;
+	}
 
 }
 
