@@ -66,16 +66,22 @@ body {
 	grid-column: col 4 / main-end;
 	display: grid;
 	grid-template-columns: [main-start] repeat(9, [col] minmax(auto, 80px))[main-end];
-	grid-template-rows: 100px 1fr;
+	// grid-template-rows: 100px 1fr;
 	grid-column-gap: 20px;
 	padding-left: 1rem;
 	h1 {
-		grid-column: col 1 / main-end;
-		grid-row: 1;
+		//grid-column: col 1 / main-end;
+		//grid-row: 1;
 	}
 	&__item {
-		grid-column: col 1 / col 9;
-		grid-row: 2;
+		//grid-column: col 1 / col 9;
+		//grid-row: 2;
+	}
+	& > * {
+		grid-column: main-start / main-end;
+	}
+	p:last-child {
+		grid-column: 2 / 10
 	}
 
 }
