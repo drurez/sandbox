@@ -1,3 +1,49 @@
+* { margin: 0; padding: 0}
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit;}
+
+
 body {
-	background: orange;
+	background: #f3f4f5;
+	font-size: 1em;
+	line-height: 1.5;
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 1rem auto;
+	padding: 0 1rem;
+	> *:nth-child(1) {background: #cd9f87;}
+	> *:nth-child(2) {background: #77c4a2;}
+	> *:nth-child(3) {background: #9d5eb7;}
+	> *:nth-child(4) {background: #c3d05b;}
+	> *:nth-child(5) {background: #4ec993;}
+	> *:nth-child(6) {background: #7c8397;}
+}
+
+
+h1 {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+h1,h2 {
+	//margin-bottom: 2rem;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 1em;
+	font-weight: 400;
+	.inline {
+		background: yellow;	
+	}
 }
