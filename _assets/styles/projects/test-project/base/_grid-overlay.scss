@@ -2,12 +2,13 @@
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
+	z-index: 2;
 }
 .grid-overlay {
 	visibility: visible;
 	position: fixed;;
 	top: 0; right: 0; bottom: 0; left: 0;
-	z-index: 0;
+	z-index: 1;
 	.g-item {
 		height: 100vh;
 		background: rgba(228, 159, 190, 0.1);
