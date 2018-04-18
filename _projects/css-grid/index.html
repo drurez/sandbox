@@ -1,0 +1,58 @@
+---
+layout: default
+project-id: css-grid
+---
+
+<header class="header">
+  <a href="" class="logo">{{ project-id }}}</a>
+  <nav class="nav">
+  	<ul class="nav__list">
+  		{% for p in site.pages %}
+  			{% if p.layout == "page" %}
+  				<li class="nav__list-item"><a href="{{ p.url }}">{{ p.title }}</a></li>
+  			{% endif %}
+  		{% endfor %}
+  	</ul>
+  </nav>
+</header>
+
+<aside class="sidebar">
+	<h1>Sidebar</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet itaque expedita inventore in cum consequuntur, iure, sit ad optio?</p>
+	<div class="vert-list">
+		<h3 class="vert-list__title">List Title</h3>
+		<ul class="vert-list__list">
+			{% for x in site.projects  %}
+				<li class="vert-list__list-item"><a href="{{x.url}}">{{ x.project-id }}</a></li>
+			{% endfor %}
+		</ul>
+</aside>
+
+<div class="main-content">
+	<h2>Lorem ipsum dolor sit amet.</h2>
+	<img src="https://placeimg.com/640/480/arch" alt="" />
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia doloremque iusto ullam iure repellat id! Numquam quos facilis laudantium reiciendis libero magnam, earum repellat adipisci molestiae rerum! Dolore perferendis aliquam deserunt eum architecto facilis labore, quo deleniti nisi quasi at eius. Molestiae velit, doloremque obcaecati atque recusandae porro doloribus quam odit explicabo eligendi aut aliquid minima. Corporis ea voluptate tenetur pariatur eaque quo, in temporibus voluptates reiciendis. Id fugiat, sint nesciunt sapiente temporibus, neque quas. Unde illum neque, dicta aperiam velit delectus, excepturi repellat ipsa quos perspiciatis quam nobis molestiae, doloremque beatae ducimus ullam. Dolorem earum ratione sint molestiae. Vitae!</p>
+	
+	<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, deleniti!</h3>
+	<ul class="list">
+		<li>Lorem ipsum dolor.</li>
+		<li>Lorem ipsum dolor.</li>
+		<li>Lorem ipsum dolor.</li>
+		<li>Lorem ipsum dolor.</li>
+	</ul>
+	
+	<p>Sit assumenda, maiores accusantium eius adipisci illum pariatur a. Doloremque nisi et molestiae eaque at, unde delectus consequatur corporis aut sequi! Excepturi in, omnis eum dolores. Deleniti aliquam quam, earum, sequi eum vitae, doloribus ullam cumque sed saepe autem quibusdam quaerat sunt magnam nisi. Ipsa quam natus, saepe sit sequi eius accusamus in vel quis, autem, dolorem temporibus dolore. Exercitationem perferendis voluptates sed molestiae vero, iste neque, perspiciatis animi inventore vitae culpa vel dolorum iusto magni in assumenda minus dolores ad quas accusantium! Possimus facilis, expedita! Quae saepe praesentium beatae, obcaecati sapiente maxime ducimus quo! Quia explicabo minus perspiciatis aut.</p>
+	
+	<img src="https://placeimg.com/640/480/arch" alt="" />
+	
+	<img src="https://placeimg.com/640/480/arch" alt="" />
+	
+	<img src="https://placeimg.com/640/480/arch" alt="" />
+	
+	<p>Fugiat quis sed totam, eum eligendi quasi incidunt impedit illo odit sequi, illum molestias, dolorem debitis numquam. Voluptate quibusdam enim ipsa temporibus illo at eligendi facere quae repellendus similique, odit et sapiente odio quis natus iusto aperiam placeat cumque obcaecati cum, dolores dicta velit? Blanditiis eos, cum necessitatibus sequi ad veritatis voluptatibus, aliquam sapiente quidem expedita alias numquam, odit nisi. Sapiente quaerat nulla dolores, vel natus quisquam ut voluptates minus quia sed maxime recusandae asperiores est ab velit expedita eius, ullam fuga tenetur, officia laboriosam voluptatem eveniet animi autem. Iusto labore, placeat nam ex reiciendis error cupiditate ab architecto provident.</p>
+</div>
+
+<footer class="footer">
+	<h1>footer</h1>
+</footer>
