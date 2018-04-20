@@ -1,0 +1,11 @@
+.site-header {
+	background: #f3e7e7;
+}
+
+.site-nav {
+	@extend .col;
+	@extend .align-self-end;
+	&__list {
+		@extend .justify-content-end;
+	}
+}

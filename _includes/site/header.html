@@ -1,12 +1,15 @@
 <header class="site-header">
-  <a href="{{ site.url }}" class="logo">Sandbox</a>
-  <nav class="site-nav">
-  	<ul class="site-nav__list">
-  		{% for p in site.pages %}
-  			{% if p.layout == "page" %}
-  				<li class="site-nav__list-item"><a href="{{ p.url }}">{{ p.title }}</a></li>
-  			{% endif %}
-  		{% endfor %}
-  	</ul>
-  </nav>
+  <div class="container">
+    <div class="row">
+    <a href="{{ site.url }}" class="logo">Sandbox</a>
+      <nav class="site-nav">
+      	<ul class="site-nav__list">
+      		{% for p in site.pages %}
+      			{% if p.layout == "page" %}
+      				<li class="site-nav__list-item"><a href="{{ p.url }}">{{ p.title }}</a></li>
+      			{% endif %}
+      		{% endfor %}
+      	</ul>
+      </nav>
+  </div>
 </header>
