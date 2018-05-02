@@ -13,11 +13,6 @@
   crossorigin="anonymous"></script>
   
   {% asset main.js  %}
-	
-  {% if page.project-id  %}
-	 {% asset '{{page.project-id}}'.css %}
-	{% else %}
-		{% asset main.css %}
-	{% endif %}
+	{% asset main.css %}
 
 </head>

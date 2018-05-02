@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul { list-style: none; }
+
+// border-box
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+
+body {
+	font-size: 14px;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 1.7;
+	font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+
+.sidebar {
+	
+}
+
+p { margin-bottom: 1rem; }

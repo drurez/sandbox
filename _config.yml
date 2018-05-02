@@ -28,10 +28,19 @@ assets:
   digest: false
   sources:
     - _assets/styles
+    - _assets/videos
+    - _assets/js
+    - _assets/images
 
+collections_dir: projects
 collections:
-  projects:
+  bootstrap-demo:
     output: true
+    permalink: :path/
+  css-grid:
+    output: true
+    permalink: :path/
+
 
 # Build settings
 markdown: kramdown
